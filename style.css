@@ -11,22 +11,25 @@ body {
   margin: auto;
 }
 
-img {
+.logo {
   width: 108px;
 }
 
 button {
-  display: none;
-  border: 0px;
-  color: #222222;
   background-color: white;
   font-size: 16px;
   font-weight: 600;
+}
+
+.menu button {
+  display: none;
+  border: 0px;
+  color: #222222;
   padding-left: 16px;
   padding-right: 16px;
 }
 
-button:nth-child(2) {
+.menu button:nth-child(2) {
   margin-left: 44px;
 }
 
@@ -49,7 +52,7 @@ button:nth-child(2) {
 }
 
 @media (min-width: 1024px) {
-  button {
+  .menu button {
     display: inline-block;
   }
 
