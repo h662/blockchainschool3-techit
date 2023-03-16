@@ -121,3 +121,49 @@ button {
 .contentsDetail div:nth-child(1) {
   color: #737373;
 }
+
+.contentsGrid {
+  margin-top: 24px;
+}
+
+.contentsCard {
+  width: 290px;
+}
+
+.contentsCardImg {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.contentsCardImg img {
+  width: 290px;
+  transition: all 0.5s;
+}
+
+.contentsCardImg img:hover {
+  transform: scale(1.1);
+}
+
+.contentsCardComplete {
+  margin-top: 8px;
+  border: 1px solid #059669;
+  width: 90px;
+  text-align: center;
+  padding: 6px 2px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #059669;
+}
+
+.contentsCardTitle {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contentsCardDescription {
+  margin-top: 8px;
+  font-size: 18px;
+}
