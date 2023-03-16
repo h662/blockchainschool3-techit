@@ -248,3 +248,78 @@ button {
   font-weight: 600;
   margin-bottom: 24px;
 }
+
+.alarmDetail {
+  font-size: 14px;
+  color: #737373;
+  font-weight: 600;
+}
+
+.introduce {
+  max-width: 1280px;
+  margin: auto;
+  margin-top: 72px;
+}
+
+.introduceTitle {
+  color: #e67800;
+  font-weight: 600;
+}
+
+.introduceDescription {
+  margin-top: 16px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.introduceDetail {
+  margin-top: 16px;
+  color: #737373;
+}
+
+.introduceGrid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+  justify-items: center;
+}
+
+@media (min-width: 1024px) {
+  .introduceGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.introduceCard {
+  position: relative;
+}
+
+.introduceCard img {
+  width: 600px;
+}
+
+.introduceCardMessage {
+  position: absolute;
+  top: 0;
+  font-size: 18px;
+  padding: 40px;
+}
+
+.introduceCardTitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.introduceCardDescription {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.introduceCardDetail {
+  font-size: 14px;
+  color: #737373;
+  font-weight: 600;
+}
