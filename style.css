@@ -124,6 +124,28 @@ button {
 
 .contentsGrid {
   margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+  justify-items: center;
+}
+
+@media (min-width: 768px) {
+  .contentsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .contentsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .contentsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .contentsCard {
@@ -134,6 +156,7 @@ button {
   display: inline-block;
   overflow: hidden;
   border-radius: 12px;
+  margin-bottom: 12px;
 }
 
 .contentsCardImg img {
@@ -146,15 +169,36 @@ button {
 }
 
 .contentsCardComplete {
-  margin-top: 8px;
+  display: inline;
   border: 1px solid #059669;
-  width: 90px;
   text-align: center;
-  padding: 6px 2px;
+  padding: 6px 8px;
   border-radius: 4px;
   font-size: 14px;
   font-weight: 600;
   color: #059669;
+}
+
+.contentsCardIng {
+  display: inline;
+  border: 1px solid #1d4ed8;
+  text-align: center;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1d4ed8;
+}
+
+.contentsCardEnd {
+  display: inline;
+  border: 1px solid #3f3f46;
+  text-align: center;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #3f3f46;
 }
 
 .contentsCardTitle {
@@ -166,4 +210,9 @@ button {
 .contentsCardDescription {
   margin-top: 8px;
   font-size: 18px;
+}
+
+.contentsCardDate {
+  color: #a3a3a3;
+  margin-top: 16px;
 }
