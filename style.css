@@ -323,3 +323,41 @@ button {
   color: #737373;
   font-weight: 600;
 }
+
+.sitemap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: auto;
+  padding-top: 32px;
+  border-top: 1px solid #d4d4d4;
+  margin-top: 120px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #d4d4d4;
+  margin-bottom: 120px;
+}
+
+.sitemapLogo {
+  align-self: start;
+}
+
+.sitemapMenu {
+  display: flex;
+}
+
+.sitemapCompany {
+  margin-left: 112px;
+}
+
+.sitemapTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: #737373;
+  margin-bottom: 20px;
+}
+
+.sitemapButton {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
