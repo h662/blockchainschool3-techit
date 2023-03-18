@@ -5,6 +5,7 @@
 @import "contents";
 @import "alarm";
 @import "introduce";
+@import "sitemap";
 
 body {
   margin: 0;
@@ -37,38 +38,7 @@ header {
 
 .sitemap {
   @extend %maxWidth;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 32px;
-  border-top: 1px solid $border;
-  margin-top: 120px;
-  padding-bottom: 32px;
-  border-bottom: 1px solid $border;
-}
-
-.sitemapLogo {
-  align-self: start;
-}
-
-.sitemapMenu {
-  display: flex;
-}
-
-.sitemapCompany {
-  margin-left: 112px;
-}
-
-.sitemapTitle {
-  font-size: 12px;
-  font-weight: 600;
-  color: $secondary;
-  margin-bottom: 20px;
-}
-
-.sitemapButton {
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 12px;
+  @extend %sitemapStyle;
 }
 
 footer {

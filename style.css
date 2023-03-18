@@ -265,12 +265,6 @@ header .loginBox .ellipsis {
   font-weight: 600;
 }
 
-body {
-  margin: 0;
-  color: #222222;
-  font-family: "Pretendard";
-}
-
 .sitemap {
   display: flex;
   justify-content: space-between;
@@ -280,30 +274,31 @@ body {
   padding-bottom: 32px;
   border-bottom: 1px solid #d4d4d4;
 }
-
-.sitemapLogo {
+.sitemap .sitemapLogo {
   align-self: start;
 }
-
-.sitemapMenu {
+.sitemap .sitemapMenu {
   display: flex;
 }
-
-.sitemapCompany {
+.sitemap .sitemapCompany {
   margin-left: 112px;
 }
-
-.sitemapTitle {
+.sitemap .sitemapTitle {
   font-size: 12px;
   font-weight: 600;
   color: #737373;
   margin-bottom: 20px;
 }
-
-.sitemapButton {
+.sitemap .sitemapButton {
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 12px;
+}
+
+body {
+  margin: 0;
+  color: #222222;
+  font-family: "Pretendard";
 }
 
 footer {
