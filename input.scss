@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
 body {
   margin: 0;
   color: #222222;
@@ -57,16 +58,19 @@ button {
   .menu button {
     display: inline-block;
   }
+
   .login {
     color: #737373;
     font-size: 16px;
     border: 0px;
     padding: 0px;
   }
+
   .ellipsis {
     display: none;
   }
 }
+
 .banner {
   position: relative;
 }
@@ -131,16 +135,19 @@ button {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (min-width: 1024px) {
   .contentsGrid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 @media (min-width: 1280px) {
   .contentsGrid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
 .contentsCard {
   width: 290px;
 }
@@ -283,6 +290,7 @@ button {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 .introduceCard {
   position: relative;
 }
@@ -385,5 +393,3 @@ footer {
   margin-top: 12px;
   margin-bottom: 4px;
 }
-
-/*# sourceMappingURL=style.css.map */
