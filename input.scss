@@ -1,8 +1,9 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import "theme";
 
 body {
   margin: 0;
-  color: #222222;
+  color: $primary;
   font-family: "Pretendard";
 }
 
@@ -60,7 +61,7 @@ button {
   }
 
   .login {
-    color: #737373;
+    color: $secondary;
     font-size: 16px;
     border: 0px;
     padding: 0px;
@@ -102,7 +103,7 @@ button {
 }
 
 .contentsTitle {
-  color: #e67800;
+  color: $techitOrange;
   font-weight: 600;
 }
 
@@ -119,7 +120,7 @@ button {
 }
 
 .contentsDetail div:nth-child(1) {
-  color: #737373;
+  color: $secondary;
 }
 
 .contentsGrid {
@@ -170,35 +171,35 @@ button {
 
 .contentsCardComplete {
   display: inline;
-  border: 1px solid #059669;
+  border: 1px solid $complete;
   text-align: center;
   padding: 6px 8px;
   border-radius: 4px;
   font-size: 14px;
   font-weight: 600;
-  color: #059669;
+  color: $complete;
 }
 
 .contentsCardIng {
   display: inline;
-  border: 1px solid #1d4ed8;
+  border: 1px solid $ing;
   text-align: center;
   padding: 6px 8px;
   border-radius: 4px;
   font-size: 14px;
   font-weight: 600;
-  color: #1d4ed8;
+  color: $ing;
 }
 
 .contentsCardEnd {
   display: inline;
-  border: 1px solid #3f3f46;
+  border: 1px solid $end;
   text-align: center;
   padding: 6px 8px;
   border-radius: 4px;
   font-size: 14px;
   font-weight: 600;
-  color: #3f3f46;
+  color: $end;
 }
 
 .contentsCardTitle {
@@ -251,7 +252,7 @@ button {
 
 .alarmDetail {
   font-size: 14px;
-  color: #737373;
+  color: $secondary;
   font-weight: 600;
 }
 
@@ -262,7 +263,7 @@ button {
 }
 
 .introduceTitle {
-  color: #e67800;
+  color: $techitOrange;
   font-weight: 600;
 }
 
@@ -274,7 +275,7 @@ button {
 
 .introduceDetail {
   margin-top: 16px;
-  color: #737373;
+  color: $secondary;
 }
 
 .introduceGrid {
@@ -320,7 +321,7 @@ button {
 
 .introduceCardDetail {
   font-size: 14px;
-  color: #737373;
+  color: $secondary;
   font-weight: 600;
 }
 
@@ -330,10 +331,10 @@ button {
   max-width: 1280px;
   margin: auto;
   padding-top: 32px;
-  border-top: 1px solid #d4d4d4;
+  border-top: 1px solid $border;
   margin-top: 120px;
   padding-bottom: 32px;
-  border-bottom: 1px solid #d4d4d4;
+  border-bottom: 1px solid $border;
 }
 
 .sitemapLogo {
@@ -351,7 +352,7 @@ button {
 .sitemapTitle {
   font-size: 12px;
   font-weight: 600;
-  color: #737373;
+  color: $secondary;
   margin-bottom: 20px;
 }
 
@@ -365,7 +366,7 @@ footer {
   max-width: 1280px;
   margin: auto;
   font-size: 12px;
-  color: #737373;
+  color: $secondary;
   padding-bottom: 24px;
 }
 
