@@ -1,0 +1,58 @@
+%headerStyle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+
+  .menu {
+    .logo {
+      width: 108px;
+    }
+
+    button {
+      display: none;
+      border: 0px;
+      padding-left: 16px;
+      padding-right: 16px;
+      font-size: 16px;
+      font-weight: 600;
+
+      &:nth-child(2) {
+        margin-left: 44px;
+      }
+
+      @include responsive("pc") {
+        display: inline-block;
+      }
+    }
+  }
+
+  .loginBox {
+    display: flex;
+    align-items: center;
+
+    .login {
+      display: inline-block;
+      border: 1px solid $border;
+      border-radius: 9999px;
+      padding: 8px 16px;
+      font-size: 14px;
+
+      @include responsive("pc") {
+        color: $secondary;
+        font-size: 16px;
+        border: 0px;
+        padding: 0px;
+      }
+    }
+
+    .ellipsis {
+      width: 24px;
+      margin-left: 16px;
+
+      @include responsive("pc") {
+        display: none;
+      }
+    }
+  }
+}

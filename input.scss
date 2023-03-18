@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 @import "theme";
+@import "header";
 
 body {
   margin: 0;
@@ -9,66 +10,7 @@ body {
 
 header {
   @extend %maxWidth;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px;
-}
-
-.logo {
-  width: 108px;
-}
-
-button {
-  background-color: white;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.menu button {
-  display: none;
-  border: 0px;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.menu button:nth-child(2) {
-  margin-left: 44px;
-}
-
-.loginBox {
-  display: flex;
-  align-items: center;
-}
-
-.login {
-  display: inline-block;
-  border: 1px solid rgb(232, 232, 232);
-  border-radius: 9999px;
-  padding: 8px 16px;
-  font-size: 14px;
-}
-
-.ellipsis {
-  width: 24px;
-  margin-left: 16px;
-}
-
-@media (min-width: 1024px) {
-  .menu button {
-    display: inline-block;
-  }
-
-  .login {
-    color: $secondary;
-    font-size: 16px;
-    border: 0px;
-    padding: 0px;
-  }
-
-  .ellipsis {
-    display: none;
-  }
+  @extend %headerStyle;
 }
 
 .banner {
