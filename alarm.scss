@@ -1,0 +1,34 @@
+%alarmStyle {
+  position: relative;
+  margin-top: 96px;
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .alarmMessage {
+    @extend %absoluteBackground;
+    font-size: 18px;
+  }
+
+  .alarmTitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: #072c56;
+    margin-bottom: 24px;
+  }
+
+  .alarmDescription {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .alarmDetail {
+    font-size: 14px;
+    color: $secondary;
+    font-weight: 600;
+  }
+}
