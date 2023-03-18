@@ -6,6 +6,7 @@
 @import "alarm";
 @import "introduce";
 @import "sitemap";
+@import "footer";
 
 body {
   margin: 0;
@@ -43,32 +44,5 @@ header {
 
 footer {
   @extend %maxWidth;
-  font-size: 12px;
-  color: $secondary;
-  padding-bottom: 24px;
-}
-
-.blockchainSchool {
-  display: flex;
-  margin-top: 16px;
-}
-
-.blockchainSchool div {
-  background-color: deeppink;
-  color: whitesmoke;
-  font-size: 12px;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;
-  border-radius: 9999px;
-  margin-right: 12px;
-  margin-bottom: 24px;
-}
-
-.footerInfo {
-  margin-top: 12px;
-  margin-bottom: 4px;
+  @extend %footerStyle;
 }
