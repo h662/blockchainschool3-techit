@@ -6,10 +6,12 @@ $ing: #1d4ed8;
 $end: #3f3f46;
 $border: #d4d4d4;
 
+$tablet: 768px;
+$laptop: 1024px;
 $pc: 1280px;
 
 %maxWidth {
-  max-width: 1280px;
+  max-width: $pc;
   margin: auto;
 }
 
@@ -26,7 +28,15 @@ button {
 }
 
 @mixin responsive($device) {
-  @if $device == "pc" {
+  @if $device == "tablet" {
+    @media (min-width: $tablet) {
+      @content;
+    }
+  } @else if $device == "labtop" {
+    @media (min-width: $labtop) {
+      @content;
+    }
+  } @else if $device == "pc" {
     @media (min-width: $pc) {
       @content;
     }

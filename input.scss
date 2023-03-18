@@ -2,6 +2,7 @@
 @import "theme";
 @import "header";
 @import "banner";
+@import "contents";
 
 body {
   margin: 0;
@@ -20,123 +21,7 @@ header {
 
 .contents {
   @extend %maxWidth;
-  margin-top: 72px;
-}
-
-.contentsTitle {
-  color: $techitOrange;
-  font-weight: 600;
-}
-
-.contentsDescription {
-  margin-top: 16px;
-  font-size: 26px;
-  font-weight: 600;
-}
-
-.contentsDetail {
-  margin-top: 16px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.contentsDetail div:nth-child(1) {
-  color: $secondary;
-}
-
-.contentsGrid {
-  margin-top: 24px;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 16px;
-  justify-items: center;
-}
-
-@media (min-width: 768px) {
-  .contentsGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .contentsGrid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 1280px) {
-  .contentsGrid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.contentsCard {
-  width: 290px;
-}
-
-.contentsCardImg {
-  display: inline-block;
-  overflow: hidden;
-  border-radius: 12px;
-  margin-bottom: 12px;
-}
-
-.contentsCardImg img {
-  width: 290px;
-  transition: all 0.5s;
-}
-
-.contentsCardImg img:hover {
-  transform: scale(1.1);
-}
-
-.contentsCardComplete {
-  display: inline;
-  border: 1px solid $complete;
-  text-align: center;
-  padding: 6px 8px;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 600;
-  color: $complete;
-}
-
-.contentsCardIng {
-  display: inline;
-  border: 1px solid $ing;
-  text-align: center;
-  padding: 6px 8px;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 600;
-  color: $ing;
-}
-
-.contentsCardEnd {
-  display: inline;
-  border: 1px solid $end;
-  text-align: center;
-  padding: 6px 8px;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 600;
-  color: $end;
-}
-
-.contentsCardTitle {
-  margin-top: 16px;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.contentsCardDescription {
-  margin-top: 8px;
-  font-size: 18px;
-}
-
-.contentsCardDate {
-  color: #a3a3a3;
-  margin-top: 16px;
+  @extend %contentsStyle;
 }
 
 .alarm {

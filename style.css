@@ -87,127 +87,98 @@ header .loginBox .ellipsis {
   margin-bottom: 12px;
 }
 
-body {
-  margin: 0;
-  color: #222222;
-  font-family: "Pretendard";
+.contents .contentsGrid .contentsCard .contentsCardEnd, .contents .contentsGrid .contentsCard .contentsCardIng, .contents .contentsGrid .contentsCard .contentsCardComplete {
+  display: inline;
+  text-align: center;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .contents {
   margin-top: 72px;
 }
-
-.contentsTitle {
+.contents .contentsTitle {
   color: #e67800;
   font-weight: 600;
 }
-
-.contentsDescription {
+.contents .contentsDescription {
   margin-top: 16px;
   font-size: 26px;
   font-weight: 600;
 }
-
-.contentsDetail {
+.contents .contentsDetail {
   margin-top: 16px;
   display: flex;
   justify-content: space-between;
 }
-
-.contentsDetail div:nth-child(1) {
+.contents .contentsDetail div:nth-child(1) {
   color: #737373;
 }
-
-.contentsGrid {
+.contents .contentsGrid {
   margin-top: 24px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 16px;
   justify-items: center;
 }
-
 @media (min-width: 768px) {
-  .contentsGrid {
+  .contents .contentsGrid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 1024px) {
-  .contentsGrid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 @media (min-width: 1280px) {
-  .contentsGrid {
+  .contents .contentsGrid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-.contentsCard {
+.contents .contentsGrid .contentsCard {
   width: 290px;
 }
-
-.contentsCardImg {
+.contents .contentsGrid .contentsCard .contentsCardImg {
   display: inline-block;
   overflow: hidden;
   border-radius: 12px;
   margin-bottom: 12px;
 }
-
-.contentsCardImg img {
+.contents .contentsGrid .contentsCard .contentsCardImg img {
   width: 290px;
   transition: all 0.5s;
 }
-
-.contentsCardImg img:hover {
+.contents .contentsGrid .contentsCard .contentsCardImg img:hover {
   transform: scale(1.1);
 }
-
-.contentsCardComplete {
-  display: inline;
+.contents .contentsGrid .contentsCard .contentsCardComplete {
   border: 1px solid #059669;
-  text-align: center;
-  padding: 6px 8px;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 600;
   color: #059669;
 }
-
-.contentsCardIng {
-  display: inline;
+.contents .contentsGrid .contentsCard .contentsCardIng {
   border: 1px solid #1d4ed8;
-  text-align: center;
-  padding: 6px 8px;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 600;
   color: #1d4ed8;
 }
-
-.contentsCardEnd {
-  display: inline;
+.contents .contentsGrid .contentsCard .contentsCardEnd {
   border: 1px solid #3f3f46;
-  text-align: center;
-  padding: 6px 8px;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 600;
   color: #3f3f46;
 }
-
-.contentsCardTitle {
+.contents .contentsGrid .contentsCard .contentsCardTitle {
   margin-top: 16px;
   font-size: 20px;
   font-weight: 600;
 }
-
-.contentsCardDescription {
+.contents .contentsGrid .contentsCard .contentsCardDescription {
   margin-top: 8px;
   font-size: 18px;
 }
-
-.contentsCardDate {
+.contents .contentsGrid .contentsCard .contentsCardDate {
   color: #a3a3a3;
   margin-top: 16px;
+}
+
+body {
+  margin: 0;
+  color: #222222;
+  font-family: "Pretendard";
 }
 
 .alarm {

@@ -1,0 +1,107 @@
+%contentsCardStyle {
+  display: inline;
+  text-align: center;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@mixin contentsCard($color: $complete) {
+  @extend %contentsCardStyle;
+  border: 1px solid $color;
+  color: $color;
+}
+
+%contentsStyle {
+  margin-top: 72px;
+
+  .contentsTitle {
+    color: $techitOrange;
+    font-weight: 600;
+  }
+
+  .contentsDescription {
+    margin-top: 16px;
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .contentsDetail {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+
+    div:nth-child(1) {
+      color: $secondary;
+    }
+  }
+
+  .contentsGrid {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    justify-items: center;
+
+    @include responsive("tablet") {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include responsive("laptop") {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include responsive("pc") {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .contentsCard {
+      width: 290px;
+
+      .contentsCardImg {
+        display: inline-block;
+        overflow: hidden;
+        border-radius: 12px;
+        margin-bottom: 12px;
+
+        img {
+          width: 290px;
+          transition: all 0.5s;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+
+      .contentsCardComplete {
+        @include contentsCard;
+      }
+
+      .contentsCardIng {
+        @include contentsCard($ing);
+      }
+
+      .contentsCardEnd {
+        @include contentsCard($end);
+      }
+
+      .contentsCardTitle {
+        margin-top: 16px;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .contentsCardDescription {
+        margin-top: 8px;
+        font-size: 18px;
+      }
+
+      .contentsCardDate {
+        color: #a3a3a3;
+        margin-top: 16px;
+      }
+    }
+  }
+}
