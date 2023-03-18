@@ -13,6 +13,13 @@ $pc: 1280px;
   margin: auto;
 }
 
+%absoluteBackground {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 196px;
+}
+
 button {
   border: 0;
   background-color: transparent;

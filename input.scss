@@ -1,6 +1,7 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 @import "theme";
 @import "header";
+@import "banner";
 
 body {
   margin: 0;
@@ -14,27 +15,7 @@ header {
 }
 
 .banner {
-  position: relative;
-}
-
-.banner img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-
-.bannerMessage {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 18px;
-  margin-left: 196px;
-}
-
-.bannerTitle {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 12px;
+  @extend %bannerStyle;
 }
 
 .contents {
@@ -170,11 +151,8 @@ header {
 }
 
 .alarmMessage {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  @extend %absoluteBackground;
   font-size: 18px;
-  margin-left: 196px;
 }
 
 .alarmTitle {

@@ -4,6 +4,13 @@ footer, .sitemap, .introduce, .contents, header {
   margin: auto;
 }
 
+.alarmMessage, .banner .bannerMessage {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 196px;
+}
+
 button {
   border: 0;
   background-color: transparent;
@@ -63,34 +70,27 @@ header .loginBox .ellipsis {
   }
 }
 
-body {
-  margin: 0;
-  color: #222222;
-  font-family: "Pretendard";
-}
-
 .banner {
   position: relative;
 }
-
 .banner img {
   width: 100%;
   height: 400px;
   object-fit: cover;
 }
-
-.bannerMessage {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+.banner .bannerMessage {
   font-size: 18px;
-  margin-left: 196px;
 }
-
-.bannerTitle {
+.banner .bannerMessage .bannerTitle {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 12px;
+}
+
+body {
+  margin: 0;
+  color: #222222;
+  font-family: "Pretendard";
 }
 
 .contents {
@@ -222,11 +222,7 @@ body {
 }
 
 .alarmMessage {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   font-size: 18px;
-  margin-left: 196px;
 }
 
 .alarmTitle {
