@@ -1,0 +1,64 @@
+%introduceStyle {
+  margin-top: 72px;
+
+  .introduceTitle {
+    color: $techitOrange;
+    font-weight: 600;
+  }
+
+  .introduceDescription {
+    margin-top: 16px;
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .introduceDetail {
+    margin-top: 16px;
+    color: $secondary;
+  }
+
+  .introduceGrid {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+    justify-items: center;
+
+    @include responsive("laptop") {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .introduceCard {
+      position: relative;
+
+      img {
+        width: 600px;
+      }
+
+      .introduceCardMessage {
+        position: absolute;
+        top: 0;
+        font-size: 18px;
+        padding: 40px;
+      }
+
+      .introduceCardTitle {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .introduceCardDescription {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+
+      .introduceCardDetail {
+        font-size: 14px;
+        color: $secondary;
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -128,6 +128,11 @@ header .loginBox .ellipsis {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (min-width: 1024px) {
+  .contents .contentsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 @media (min-width: 1280px) {
   .contents .contentsGrid {
     grid-template-columns: repeat(4, 1fr);
@@ -204,76 +209,66 @@ header .loginBox .ellipsis {
   font-weight: 600;
 }
 
-body {
-  margin: 0;
-  color: #222222;
-  font-family: "Pretendard";
-}
-
 .introduce {
   margin-top: 72px;
 }
-
-.introduceTitle {
+.introduce .introduceTitle {
   color: #e67800;
   font-weight: 600;
 }
-
-.introduceDescription {
+.introduce .introduceDescription {
   margin-top: 16px;
   font-size: 26px;
   font-weight: 600;
 }
-
-.introduceDetail {
+.introduce .introduceDetail {
   margin-top: 16px;
   color: #737373;
 }
-
-.introduceGrid {
+.introduce .introduceGrid {
   margin-top: 48px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 32px;
   justify-items: center;
 }
-
 @media (min-width: 1024px) {
-  .introduceGrid {
+  .introduce .introduceGrid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-.introduceCard {
+.introduce .introduceGrid .introduceCard {
   position: relative;
 }
-
-.introduceCard img {
+.introduce .introduceGrid .introduceCard img {
   width: 600px;
 }
-
-.introduceCardMessage {
+.introduce .introduceGrid .introduceCard .introduceCardMessage {
   position: absolute;
   top: 0;
   font-size: 18px;
   padding: 40px;
 }
-
-.introduceCardTitle {
+.introduce .introduceGrid .introduceCard .introduceCardTitle {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 8px;
 }
-
-.introduceCardDescription {
+.introduce .introduceGrid .introduceCard .introduceCardDescription {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 16px;
 }
-
-.introduceCardDetail {
+.introduce .introduceGrid .introduceCard .introduceCardDetail {
   font-size: 14px;
   color: #737373;
   font-weight: 600;
+}
+
+body {
+  margin: 0;
+  color: #222222;
+  font-family: "Pretendard";
 }
 
 .sitemap {

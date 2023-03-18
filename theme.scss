@@ -32,8 +32,8 @@ button {
     @media (min-width: $tablet) {
       @content;
     }
-  } @else if $device == "labtop" {
-    @media (min-width: $labtop) {
+  } @else if $device == "laptop" {
+    @media (min-width: $laptop) {
       @content;
     }
   } @else if $device == "pc" {
